@@ -1,0 +1,180 @@
+/* Import Fonts */
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/FuturaCyrillicDemi.ttf') format('ttf'),
+         url('./fonts/FuturaCyrillicDemi.ttf') format('ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Pro LT';
+    src: url('./fonts/AvenirLTProLight.otf') format('otf'),
+         url('./fonts/AvenirLTProLight.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('./fonts/Inter_24pt-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #04003b;
+    color: white;
+    font-family: 'Avenir Pro LT', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto; /*scrolling*/
+    flex-direction: column;
+    text-align: center; /* Ensures text is centered */
+}
+
+/* Topbar */
+.topbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #240361;
+    z-index: 1;
+}
+
+.topbar-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    font-family: 'Avenir LT Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.directories a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Avenir LT Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.directories a:hover {
+    color: #433bff;
+}
+
+
+/* Main Heading Styles (Welcome) */
+h1 {
+    font-family: 'Futura PT Semi-bold', sans-serif;
+    font-weight: 600;
+    font-size: 12rem;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    border-right: 2px solid white; /* Cursor effect */
+    visibility: hidden; /* Initially invisible */
+    animation: fadeIn 0s 1s forwards, typing 2s steps(30) 1s 1 normal forwards, stopCursor 0s 2.4s forwards;
+}
+
+/* Typing Animation for Welcome */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Fade-in Animation for Welcome */
+@keyframes fadeIn {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+/* Remove Cursor After Typing */
+@keyframes stopCursor {
+    from {
+        border-right: 2px solid white;
+    }
+    to {
+        border-right: none; /* Remove the cursor completely */
+    }
+}
+
+
+
+/* Subheading Styles (I'm Stan.) */
+.subheading {
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 8rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    border-right: 2px solid white; /* Cursor effect */
+    visibility: hidden; /* Initially hidden, animation comes in */
+    animation: fadeInSubheading 0s 3s forwards, typing 3s steps(30) 3s 1 normal forwards, stopCursorSubheading 3s 3.25s forwards;
+}
+
+/* Typing Animation for "Stan" */
+.subheading .stan {
+    font-size: 8rem;
+    color: #433bff;
+}
+
+@keyframes fadeInSubheading {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+/* Typing Animation for I'm Stan */
+@keyframes typingSubheading {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Remove Cursor After Typing */
+@keyframes stopCursorSubheading {
+    from {
+        border-right: 2px solid white;
+    }
+    to {
+        border-right: none; /* Remove the cursor completely */
+    }
+}
+
