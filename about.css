@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/FuturaCyrillicDemi.ttf') format('ttf'),
+         url('./fonts/FuturaCyrillicDemi.ttf') format('ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Pro LT';
+    src: url('./fonts/AvenirLTProLight.otf') format('otf'),
+         url('./fonts/AvenirLTProLight.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('./fonts/Inter_24pt-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #04003b;
+    color: white;
+    font-family: 'Avenir Pro LT', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto; /*scrolling*/
+    flex-direction: column;
+    text-align: center; /* Ensures text is centered */
+}
+
+/* Topbar */
+.topbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #240361;
+    z-index: 1;
+}
+
+.topbar-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    font-family: 'Avenir LT Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.directories a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Avenir LT Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.directories a:hover {
+    color: #433bff;
+}
